@@ -3,24 +3,7 @@ package no.dnb.shop;
 import java.util.ArrayList;
 
 
-/* Online Retailer
----------------
-Define a Product class
- - description
- - category
- - netPrice
- - unitsInStock
- - stockReorderThreshold
-Functionality:
- - inStock()
- - getSalesTax()
- - getGrossPrice()
- - checkStockLevelAndMaybeReorder()
- - ???
-
-Define a simple Main class to test your Product code
-
- */
+/* Not part of assigment - please ignore
 
 
 public class Inventory {
@@ -36,7 +19,7 @@ public class Inventory {
         return products.size();
     }
 /*
-    public boolean containsInventoru(String inventoryToSearchFor) {
+    public boolean containsInventory(String inventoryToSearchFor) {
         for (int i = 0; i < products.size(); i++) {
             Product product = products.get(i);
             if (product.nameOfProduct().equals(inventoryToSearchFor)) {
@@ -69,4 +52,3 @@ public class Inventory {
     }
 }
  */
-}

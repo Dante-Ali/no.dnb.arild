@@ -19,7 +19,7 @@ Define a simple Main class to test your Product code
     public class Product {
 
         //Starting with properties of object
-        private String nameOfProduct;
+        private String nameOfProduct; //desription
         private String category;
         private double netPrice;
         private int unitsInStock;
@@ -55,6 +55,11 @@ Define a simple Main class to test your Product code
             return netPrice;
         }
 
+    //see if item in stock
+        public boolean inStock() {
+            return unitsInStock > 0;
+        }
+
         //Instance methods
 
         //sell a product
@@ -68,10 +73,7 @@ Define a simple Main class to test your Product code
             }
         }
 
-        //see if item in stock
-        public boolean inStock() {
-            return unitsInStock > 0;
-        }
+
 
         public int checkStockLevelAndMaybeReorder() {
             // Increases stock by ordering 5 more if,  stocklevel is below 3
@@ -82,7 +84,7 @@ Define a simple Main class to test your Product code
             } else {
                 System.out.println("You don't need to reorder. Your stock is: " + unitsInStock);
             }
-            return 0;
+            return 0; //hmm?
         }
 
 
