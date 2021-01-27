@@ -1,5 +1,5 @@
 package no.dnb.shop;
-/*Functionality:
+/*Functionality :
         - inStock() - done
         - getSalesTax() - done
         - getGrossPrice() - done
