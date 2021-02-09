@@ -8,7 +8,7 @@ public class UsingStringBuilder {
 		
 		// Write code here, to explore the capabilities of the StringBuilder class.
 		String palindrome ="Dot saw i was Tod";
-		StringBuilder  sb = new StringBuilder(50);
+		StringBuilder sb = new StringBuilder(50);
 
 		sb.append("hei hei hei");
 		System.out.println("length is: " + sb.length());
