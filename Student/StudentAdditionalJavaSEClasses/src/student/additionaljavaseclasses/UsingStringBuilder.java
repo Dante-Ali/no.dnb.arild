@@ -11,6 +11,7 @@ public class UsingStringBuilder {
 		StringBuilder sb = new StringBuilder(50);
 
 		sb.append("hei hei hei");
+		sb.append(palindrome);
 		System.out.println("length is: " + sb.length());
 		sb.delete(4,7);
 		System.out.println("1: " + sb);
