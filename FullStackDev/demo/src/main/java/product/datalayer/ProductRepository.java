@@ -1,5 +1,7 @@
-package product;
+package product.datalayer;
 
+
+import product.models.Product;
 
 import java.util.Collection;
 
