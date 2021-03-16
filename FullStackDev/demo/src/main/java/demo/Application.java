@@ -1,8 +1,10 @@
-package no.reskill.products.demo;
+package demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import product.ProductRepository;
+import product.ProductRepositoryInMemory;
 
 @SpringBootApplication
 public class Application {
