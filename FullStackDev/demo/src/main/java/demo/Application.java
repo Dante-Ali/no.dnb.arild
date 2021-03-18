@@ -3,8 +3,8 @@ package demo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import product.ProductRepository;
-import product.ProductRepositoryInMemory;
+import product.datalayer.ProductRepository;
+import product.datalayer.ProductRepositoryInMemory;
 
 @SpringBootApplication
 public class Application {

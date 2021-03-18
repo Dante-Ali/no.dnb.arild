@@ -3,13 +3,19 @@ package product.datalayer;
 import org.springframework.stereotype.Repository;
 import product.models.Product;
 
-
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
+import java.util.List;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
 @Repository
 public class ProductRepositoryInMemory implements ProductRepository {
+
+    @PersistenceContext
+    protected EntityManager entityManager;
 
     private Map<Long, Product> catalog = new HashMap<>();
     private static long nextId = 1;
@@ -51,6 +57,11 @@ public class ProductRepositoryInMemory implements ProductRepository {
             catalog.replace(id, product);
             return true;
         }
+    }
+
+    @Override
+    public void updateProduct2(Product product) {
+
     }
 
     @Override

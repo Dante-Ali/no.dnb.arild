@@ -4,12 +4,19 @@ package product.models;
 // This is just a POJO, we create new instances of this class "just like normal".
 // This will evolve into an "entity" class (ORM, object-relational mapping - JPA).
 
+import javax.persistence.*;
+
 // new Product(-1, "Sian", 2.2E6)
+@Entity
+@Table(name="PRODUCT")
 public class Product {
 
-    private long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id = -1;
     private String description;
     private double price;
+    @Column(name = "instock")
     private long inStock;
 
     public Product() {}

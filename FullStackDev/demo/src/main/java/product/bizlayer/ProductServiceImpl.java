@@ -18,7 +18,7 @@ public class ProductServiceImpl implements ProductService {
     private ProductRepository repository;
     private final MyBeanVat myBeanVat;
 
-
+    @Autowired
     public ProductServiceImpl(@Qualifier("productRepositoryInMemory") ProductRepository repository, @Qualifier("low") MyBeanVat myBeanVat ) {
         this.repository = repository;
         this.myBeanVat = myBeanVat;

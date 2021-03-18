@@ -13,5 +13,6 @@ public interface ProductRepository {
 
     Product insertProduct(Product product);
     boolean updateProduct(Product product);
+    void updateProduct2(Product product);
     boolean deleteProduct(long id);
 }
